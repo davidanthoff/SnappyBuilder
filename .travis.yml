@@ -20,6 +20,10 @@ deploy:
   provider: releases
   api_key:
     secure: hDl+yKgTfCOAqZoTdix8Jq5QZFMRvTlp58cUwA4ZnENyh1JxSK9+Y8wp71OwIj0wMuzpvD5HCe99D7pp7Frw3+OhRj9igCitKVyLyCf8+EchP3pS1E/lmNACdGqDp1rnPSXG5xPwDT03d1+ISl+3npRQyCZMsNT/M7Ux8JGzdkklSBGHSYOkFBML8147PRFgj3JljBEGoGEKck/jlvsDasgSNRi7s6Yk/9hfuvYJH0bPlzNSO6S9eYUSz88N3OIpDeGpLqRko7mLA9yJSijDbeDwj90Uq/CRfXswvV/xbuv5l8tLVJ3XJbYtHIT0Yt4vuVXAbUN+6It1dFYYEgOXasv0kGcdgOf9k97yD0t3lzp1ZNytV+ux6smiYzcnPvGjksBXSHqqFgdi+hb8qVIafFxZ4AI1gL5c2bVWJGiSTIrAYICy52qXMqUcooPIcl6ZBl7Wew12+FDvc8C21MpTmgKGwihBZeiDAaUjgmV7zmQu4BnR5xs2MX4jquoD2x93pKbJzulpf2PM2VUKwJZHo2La/OAtF6oyxiU6Rl1ufjSKi5Ceg3IjOMG/i4AvxouZd/ABl7nsndGxLsA0fSt4BwuPLfkPp/ZdLrXpZB1LZhZwjVHxjlYG+1MO7nEjaI4Hopvi+8C/+3Ig774Vg0Dwy9D3v4NWjA1IsLksRt4cmPc=
+  file_glob: true
   file: products/*.tar.gz
+  skip_cleanup: true
   on:
     repo: davidanthoff/SnappyBuilder
+    tags: true
+
