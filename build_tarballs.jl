@@ -21,7 +21,7 @@ cd $WORKSPACE/srcdir
 cd snappy-1.1.7
 mkdir build
 cd build
-cmake ../ -DBUILD_SHARED_LIBS=On
+cmake ../ -DBUILD_SHARED_LIBS=On -DCMAKE_INSTALL_BINDIR=/bin -DCMAKE_INSTALL_LIBDIR=/lib -DCMAKE_INSTALL_INCLUDEDIR=/include
 make
 make install
 
