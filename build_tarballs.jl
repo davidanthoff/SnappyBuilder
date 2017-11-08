@@ -7,7 +7,8 @@ platforms = [
   BinaryProvider.Linux(:armv7l, :glibc),
   BinaryProvider.Linux(:powerpc64le, :glibc),
   BinaryProvider.Windows(:i686),
-  BinaryProvider.Windows(:x86_64)
+  BinaryProvider.Windows(:x86_64),
+  BinaryProvider.MacOS()
 ]
 
 sources = [
