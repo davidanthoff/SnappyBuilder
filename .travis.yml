@@ -12,7 +12,7 @@ sudo: required
 # Before anything else, get the latest versions of things  
 before_script:
 - julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryProvider.jl")'
-- julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryBuilder.jl"); Pkg.checkout("BinaryBuilder", "sf/clang")'
+- julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryBuilder.jl")'
 - julia -e 'Pkg.build()'
 
 script:
