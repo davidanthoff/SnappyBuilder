@@ -7,6 +7,13 @@ notifications:
   email: false
 git:
   depth: 99999999
+cache:
+  timeout: 1000
+  directories:
+    - downloads
+env:
+  global:
+    - BINARYBUILDER_DOWNLOADS_CACHE=downloads
 sudo: required
 
 # Before anything else, get the latest versions of things  
@@ -17,6 +24,10 @@ before_script:
 
 script:
 - julia build_tarballs.jl
+
+before_cache:
+  - rm -rf $(julia -e 'println(Pkg.dir("BinaryBuilder","deps","root"))')
+
 deploy:
   provider: releases
   api_key:
