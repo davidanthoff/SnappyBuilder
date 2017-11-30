@@ -23,7 +23,6 @@ mkdir build && cd build
 cmake ../ -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/ -DCMAKE_TOOLCHAIN_FILE=/opt/$target.toolchain
 make
 make install
-
 """
 
 products = prefix -> [
