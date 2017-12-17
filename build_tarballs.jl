@@ -20,7 +20,7 @@ script = raw"""
 cd $WORKSPACE/srcdir
 cd snappy-1.1.7
 mkdir build && cd build
-cmake ../ -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/ -DCMAKE_TOOLCHAIN_FILE=/opt/$target.toolchain
+cmake ../ -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/ -DCMAKE_TOOLCHAIN_FILE=/opt/$target/$target.toolchain
 make
 make install
 """
