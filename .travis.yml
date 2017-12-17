@@ -27,9 +27,6 @@ before_script:
 script:
 - julia build_tarballs.jl
 
-before_cache:
-  - rm -rf $(julia -e 'println(Pkg.dir("BinaryBuilder","deps","root"))')
-
 deploy:
   provider: releases
   api_key:
